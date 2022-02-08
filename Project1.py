@@ -337,29 +337,25 @@ while True:
             except ValueError:
                 print("%s Is Not A Valid Input: Please Enter 1 - 6!" %num)
 
-    if(num == 1):
+    if num == 1:
         stateReport(states)
-    elif(num == 2):
+    elif num == 2:
         nameSorter(states, 0, len(states) - 1)
         print("States Have Been Sorted By Name.\n")
         nameSorted = True
-    elif (num == 3):
+    elif num == 3:
         fatalitySorter(states)
         print("States Have Been Sorted By Fatality Rate\n")
         nameSorted = False
-    elif(num == 4):
+    elif num == 4:
         print("Which State Are You Searching: ")
         state_finder(input(), nameSorted, states)
-    elif(num == 5):
+    elif num == 5:
         spearman_rho(states)
-    elif(num == 6):
+    elif num == 6:
         print("Goodbye!\n")
         break
     else:
-        print("%s Is Not A Valid Input: Please Enter 1 - 6!" %num)
-    
+        print("%s Is Not A Valid Input: Please Enter 1 - 6!" % num)
 
-f.close
-
-
-
+f.close()
