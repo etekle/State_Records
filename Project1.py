@@ -327,7 +327,8 @@ while True:
                 + "5. Print Spearman's \u03C1 Correlation Matrix\n"
                 + "6. QUIT")
 
-        num = int(input())    
+        num = int(input())
+    #End Try
     except ValueError:
         while True:
             try:
@@ -336,7 +337,7 @@ while True:
                 break
             except ValueError:
                 print("%s Is Not A Valid Input: Please Enter 1 - 6!" %num)
-
+            #End Except
     if num == 1:
         stateReport(states)
     elif num == 2:
